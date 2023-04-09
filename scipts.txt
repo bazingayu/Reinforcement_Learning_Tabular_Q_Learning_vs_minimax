@@ -1,0 +1,26 @@
+So this is my video about the TCD AI assignment 2.
+I created two game classes, including connect4 and tic tac toe.
+for each game, I created some basic valuables. And I have a function to detect if it wins. And if this step is valid.
+And put the player onto the input grid. Render function is to print the board.
+Same design of the connect 4 game.
+
+For players, I created 4 kinds of players.
+Dummy player is the default opponent mentioned in the requirement.
+It's not totally random. Prevent the opponent wins in the next step. And if there is a valid move to win. It will choice that step.
+
+HumanPlayer is the player that you can play with the algorithms. It receives the input from the keyboard. For tic tac toe. the input is 1 to 9, represents 9 grids.
+For connect 4, the inout is 1-8, represents which colume do you want to use.
+
+For minimax algorithm, get move is the entrance of the recursion minnimax algorithms. I use the all steps to distinguish which game it is. The all steps is 9 it the game is tic tac toe.
+
+For Tabular Q-learning.
+Hash value is to compute the hash value for the board. Each board has the unique hash value. get q is to get the Q values for the current board.
+get move is to get the best move according to the Q value.  backtrace means to update the Q values for all the history board when gameover.
+
+play is the entrance of the game. we have four parameters. the first one is the game, its a string. for tic tac toe. You need to input the tic.  connect for connect 4
+And player1 is the fisrt player. make sure you have "minimax" for minimax algorithms. For example, you can input minimax 1 or 2 to distinguish. make sure you have tq for Q-learning. and human for human.
+default for default opponent.
+player2 is the same logic.
+And iterations means how many iterations do you want to run to plot the figures. each iteration represents 100 games to calculate the winning percentage.
+
+for example,
