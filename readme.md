@@ -1,4 +1,4 @@
-# AI assignment2 
+# Reinforcement Learning : Tabular Q learning Vs minimax  to play tic tac toe and connect 4. 
  python play.py -g tic -p1 minimax -p2 human -iter 10  
 -g means the game you choice to play. (you can choose "tic" or "connect")  
 -p1 for player1, which algorithm do you want to use.  
